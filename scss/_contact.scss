@@ -1,0 +1,91 @@
+#contact {
+    height: 800px;
+    color: $colorLight1;
+}
+
+#contact .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact .contactInfo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contactInfo .contactInfoTitle {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+#contact .contactInfo .contactForm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 32px;
+}
+
+#contact .contactInfo .contactForm .inputHolder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+#contact .contactInfo .contactForm input {
+    height: 22px;
+    width: 80%;
+    background: $bgColor;
+    border: 0;
+    border-bottom: 1px solid $colorLight1;
+    font-size: 18px;
+    text-align: center;
+    color: $colorLight3;
+}
+
+#contact .contactInfo .contactForm input::placeholder {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+#contact .contactInfo .contactForm input#message {
+    height: 200px;
+    border: 1px solid $colorLight1;
+}
+
+#contact .contactImageHolder {
+    height: 100%;
+    width: 48%;
+    background-image: url("../images/monika2.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact button {
+    font-family: 'Nunito', sans-serif;
+    width: 240px;
+    height: 50px;
+    margin: 20px 0 10px 0;
+    background: $colorPrimary1;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    color: $colorText1;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: $colorLight3;
+    color: $colorText3;
+}
