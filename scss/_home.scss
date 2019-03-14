@@ -1,0 +1,22 @@
+#home {
+    height: 500px;
+    background-image: url("../images/zebra.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#home .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#home .homeInfo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    text-align: justify;
+    line-height: 28px;
+}

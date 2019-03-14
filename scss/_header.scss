@@ -1,0 +1,29 @@
+#header {
+    background: $bgColor;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .logo {
+    padding-top: 5px;
+}
+
+#header .menu {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header .menu .menuItem {
+    display: inline-block;
+}
+
+#header .menu .menuItem a {
+    color: $colorLight1;
+    padding: 10px;
+}

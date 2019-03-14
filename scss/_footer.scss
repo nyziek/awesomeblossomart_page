@@ -1,0 +1,33 @@
+#footer {
+    height: 50px;
+    width: 100%;
+    background: $colorPrimary2;
+}
+
+#footer .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $colorText2;
+}
+
+#footer .container a {
+    display: inline-block;
+    color: $colorText2;
+    padding: 7px 0;
+}
+
+#footer .socialMedia {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#footer img {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+}

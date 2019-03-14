@@ -1,0 +1,17 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: $bgColor;
+    color: $colorLight1;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
