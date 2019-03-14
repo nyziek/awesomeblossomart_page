@@ -1,5 +1,7 @@
 #header {
+    height: 100px;
     background: $bgColor;
+    border-bottom: 1px solid #C8C8C9;
 }
 
 #header .container {
@@ -26,4 +28,8 @@
 #header .menu .menuItem a {
     color: $colorLight1;
     padding: 10px;
+}
+
+#header .menu .menuItem a:hover {
+    color: $colorLight2;
 }

@@ -1,0 +1,65 @@
+#offer {
+    height: 700px;
+    background-image: url("../images/smoke.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: $colorText2;
+}
+
+#offer .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#offer .offerList {
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#offer .offerList .offerItem {
+    height: 100%;
+    width: 31%;
+    background: rgba($colorLight2, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#offer .offerList .offerInfoTitleHolder {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#offer .offerList .offerInfoTitleHolder .offerInfoTitle {
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#offer .offerList .offerInfoText {
+    height: 30%;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+#offer .offerList .offerInfoImgHolder {
+    height: 45%;
+    width: 95%;;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#offer .offerList .offerInfoImg {
+    max-width: 100%;
+    max-height: 100%;
+
+}

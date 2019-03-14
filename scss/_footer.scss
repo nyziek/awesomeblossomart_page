@@ -9,25 +9,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $colorText2;
 }
 
-#footer .container a {
-    display: inline-block;
+#footer .container .contactInfo {
+    width: 50%;
+}
+
+#footer .container .contactInfo a {
     color: $colorText2;
-    padding: 7px 0;
+    padding: 5px 5px;
+    margin: 0 10px;
+}
+
+#footer .copyright {
+    width: 20%;
+    font-size: 14px;
 }
 
 #footer .socialMedia {
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-#footer img {
-    height: 30px;
-    width: 30px;
+#footer .socialMedia a {
+    padding: 0;
+    margin: 5px 10px 0 15px;
+}
+
+#footer .socialMedia img {
+    height: 35px;
+    width: 35px;
     border-radius: 10px;
-    margin-left: 20px;
 }

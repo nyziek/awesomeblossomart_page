@@ -1,7 +1,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background: $bgColor;
-    color: $colorLight1;
+    color: $colorText1;
     overflow-x: hidden;
 }
 
@@ -14,4 +14,9 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.decor {
+    width: 50%;
+    margin: 5px 0 30px 0;
 }
