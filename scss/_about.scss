@@ -53,12 +53,13 @@
 @media (max-width: 1050px) {
 
     #about {
-        height: 900px;
+        height: 800px;
         background: $colorPrimary1;
     }
 
     #about .container {
         flex-direction: column-reverse;
+        justify-content: center;
     }
 
     #about .aboutInfo {
@@ -76,11 +77,12 @@
     }
 
     #about .aboutInfo .aboutInfoText {
-        height: 70%;
+        //height: 70%;
     }
 
     #about .aboutImageHolder {
-        height: 50%;
-        width: 60%;
+        height: 40%;
+        width: 70%;
+        background-position: center;
     }
 }
