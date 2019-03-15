@@ -10,6 +10,15 @@
     align-items: center;
 }
 
+#contact .contactImageHolder {
+    height: 100%;
+    width: 48%;
+    background-image: url("../images/monika2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #contact .contactInfo {
     height: 100%;
     width: 50%;
@@ -25,7 +34,7 @@
 }
 
 #contact .contactInfo .contactForm {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,13 +52,13 @@
 
 #contact .contactInfo .contactForm input {
     height: 22px;
-    width: 80%;
+    width: 90%;
     background: $bgColor;
     border: 0;
     border-bottom: 1px solid $colorLight1;
     font-size: 18px;
     text-align: center;
-    color: $colorLight3;
+    color: $colorLight2;
 }
 
 #contact .contactInfo .contactForm input::placeholder {
@@ -58,18 +67,14 @@
     text-align: center;
 }
 
+#contact .contactInfo .contactForm input:focus {
+    outline: $colorLight1;
+    background: $colorLight2;
+}
+
 #contact .contactInfo .contactForm input#message {
     height: 200px;
     border: 1px solid $colorLight1;
-}
-
-#contact .contactImageHolder {
-    height: 100%;
-    width: 48%;
-    background-image: url("../images/monika2.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #contact button {
@@ -85,7 +90,8 @@
     cursor: pointer;
 }
 
-#contact button:hover {
-    background: $colorLight3;
-    color: $colorText3;
+#contact button:hover,
+#contact button:focus {
+    background: $colorPrimary2;
+    color: $colorText2;
 }

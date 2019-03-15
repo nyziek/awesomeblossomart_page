@@ -8,11 +8,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 10px;
 }
 
 #about .aboutInfo {
     height: 100%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#about .aboutInfo .aboutInfoTitleHolder {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,10 +42,45 @@
 
 #about .aboutImageHolder {
     height: 100%;
-    width: 48%;
+    width: 50%;
     background-image: url("../images/monika.jpg");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px 20px $colorPrimary1 inset;
+}
+
+@media (max-width: 1050px) {
+
+    #about {
+        height: 900px;
+        background: $colorPrimary1;
+    }
+
+    #about .container {
+        flex-direction: column-reverse;
+    }
+
+    #about .aboutInfo {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    #about .aboutInfo .aboutInfoTitleHolder {
+        height: 30%;
+    }
+
+    #about .aboutInfo .aboutInfoText {
+        height: 70%;
+    }
+
+    #about .aboutImageHolder {
+        height: 50%;
+        width: 60%;
+    }
 }
