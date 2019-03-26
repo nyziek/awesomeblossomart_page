@@ -1,5 +1,5 @@
 #contact {
-    height: 800px;
+    height: 750px;
     color: $colorLight1;
 }
 
@@ -31,6 +31,7 @@
 #contact .contactInfo .contactInfoTitle {
     font-size: 40px;
     font-weight: lighter;
+    text-align: center;
 }
 
 #contact .contactInfo .contactForm {
@@ -79,7 +80,7 @@
 
 #contact button {
     font-family: 'Nunito', sans-serif;
-    width: 240px;
+    width: 160px;
     height: 50px;
     margin: 20px 0 10px 0;
     background: $colorPrimary1;
@@ -94,4 +95,37 @@
 #contact button:focus {
     background: $colorPrimary2;
     color: $colorText2;
+}
+
+@media (max-width: 835px) {
+
+    #contact {
+        height: auto;
+    }
+
+    #contact .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact .contactImageHolder {
+        height: 400px;
+        width: 100%;
+    }
+
+    #contact .contactInfo {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #contact .contactInfo .contactInfoTitle {
+        font-size: 35px;
+    }
 }

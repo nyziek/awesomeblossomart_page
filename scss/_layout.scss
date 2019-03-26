@@ -2,13 +2,11 @@ body {
     font-family: 'Quicksand', sans-serif;
     background: $bgColor;
     color: $colorText1;
-    overflow-x: hidden;
 }
 
 .container {
-    max-width: 1400px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 

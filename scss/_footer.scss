@@ -12,7 +12,7 @@
 }
 
 #footer .container .contactInfo {
-    width: 45%;
+    width: 40%;
 }
 
 #footer .container .contactInfo a {
@@ -21,26 +21,25 @@
     margin: 0 10px;
 }
 
-#footer .copyright {
-    width: 30%;
-    font-size: 14px;
-}
-
 #footer .socialMedia {
-    width: 25%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 #footer .socialMedia a {
     padding: 0;
-    margin: 5px 10px 0 10px;
+    margin: 5px 15px 0 0;
 }
 
 #footer .socialMedia img {
     height: 35px;
     width: 35px;
     border-radius: 10px;
+}
+
+#footer .copyright {
+    text-align: right;
+    font-size: 14px;
 }

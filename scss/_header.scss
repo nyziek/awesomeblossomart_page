@@ -5,12 +5,36 @@
 }
 
 #header .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+#header .logoContainer {
+    width: 40%;
+    height: 100%;
+}
+
 #header .logo {
-    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+#header .logo a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#header .logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header .menuContainer {
+    width: 60%;
+    position: relative;
 }
 
 #header .menu {
@@ -32,4 +56,86 @@
 
 #header .menu .menuItem a:hover {
     color: $colorPrimary2;
+}
+
+#header .hamburgerMenuIcon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#header .bar1, #header .bar2, #header .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: $colorLight1;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#header .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+#header .change .bar2 {opacity: 0;}
+
+#header .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media(min-width: 1041px) {
+
+    #header .menu {
+        display: flex;
+    }
+}
+
+@media(max-width: 1040px) {
+
+    #header .logoContainer {
+        width: 70%;
+    }
+
+    #header .menuContainer {
+        width: 30%;
+    }
+
+    #header .menu {
+        height: auto;
+        margin-top: 100px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #header .menu .menuItem {
+        width: 150px;
+        height: 40px;
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+        background: $colorPrimary2;
+        border: 1px solid $colorSecondary2;
+        text-align: right;
+    }
+
+    #header .menu .menuItem a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #header .menu .menuItem a:hover {
+        color: $colorText2;
+    }
+
+    #header .hamburgerMenuIcon {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        cursor: pointer;
+    }
 }
