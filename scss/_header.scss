@@ -43,6 +43,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 999;
 }
 
 #header .menu .menuItem {
@@ -109,6 +110,7 @@
         display: none;
         flex-direction: column;
         align-items: flex-end;
+        z-index: 1;
     }
 
     #header .menu .menuItem {

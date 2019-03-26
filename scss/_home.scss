@@ -53,6 +53,10 @@
         height: auto;
     }
 
+    #home .bgImageHolder {
+        position: unset;
+    }
+
     #home .homeInfo {
         margin: 20px 0;
     }
@@ -68,7 +72,6 @@
 
     #home .homeInfo .homeInfoText {
         width: 100%;
-        margin-top: 400px;
         line-height: 38px;
     }
 }
