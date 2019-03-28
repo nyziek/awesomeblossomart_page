@@ -4,6 +4,10 @@ body {
     color: $colorText1;
 }
 
+.page {
+    overflow-x: hidden;
+}
+
 .container {
     width: 1200px;
     max-width: 90%;

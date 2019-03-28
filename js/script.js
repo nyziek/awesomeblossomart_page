@@ -7,16 +7,11 @@ const menu = document.querySelector(".menu");
 
 function hamburgerMenuClickHandle() {
     hamburgerMenuIcon.classList.toggle("change");
-
-    if (hamburgerMenuIcon.classList.contains("change")) {
-        menu.style.display = "flex";
-    } else {
-        menu.style.display = "none";
-    }
+    menu.classList.toggle("visible");
 }
 
 function menuHide() {
-    menu.style.display = "none";
+    menu.classList.toggle("visible");
     hamburgerMenuIcon.classList.toggle("change");
 }
 

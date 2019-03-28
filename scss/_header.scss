@@ -48,6 +48,11 @@
 
 #header .menu .menuItem {
     display: inline-block;
+    border-left: 1px dashed $colorLight1;
+}
+
+#header .menu .menuItem:first-of-type {
+    border-left: 0;
 }
 
 #header .menu .menuItem a {
@@ -76,8 +81,8 @@
 }
 
 #header .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-7px, 8px);
+    transform: rotate(-45deg) translate(-7px, 8px);
 }
 
 #header .change .bar2 {opacity: 0;}
@@ -107,30 +112,36 @@
     #header .menu {
         height: auto;
         margin-top: 100px;
-        display: none;
+        visibility: hidden;
         flex-direction: column;
         align-items: flex-end;
+        transform: translateX(300px);
+        z-index: -1;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0s;
+    }
+
+    #header .menu.visible {
+        visibility: visible;
+        opacity: 1;
         z-index: 1;
+        transform: translateX(0%);
+        transition-delay: 0s, 0s, 0.3s;
     }
 
     #header .menu .menuItem {
         width: 150px;
         height: 40px;
-        margin-top: 4px;
         display: flex;
         align-items: center;
-        background: $colorPrimary2;
-        border: 1px solid $colorSecondary2;
+        background: $bgColor;
+        border-bottom: 1px dashed $colorLight1;
+        border-left: 0;
         text-align: right;
     }
 
     #header .menu .menuItem a {
         width: 100%;
         text-align: center;
-    }
-
-    #header .menu .menuItem a:hover {
-        color: $colorText2;
     }
 
     #header .hamburgerMenuIcon {
