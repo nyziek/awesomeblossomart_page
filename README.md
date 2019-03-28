@@ -39,14 +39,14 @@ Screenshots:
 
 * Mobile: 
 
-![Screenshot 5](./screenshots/awesomeblossomart1_page_mob.jpg)
+![Screenshot 5](./screenshots/awesomeblossomart1_page_mob.png)
 
-![Screenshot 6](./screenshots/awesomeblossomart2_page_mob.jpg)
+![Screenshot 6](./screenshots/awesomeblossomart2_page_mob.png)
 
-![Screenshot 7](./screenshots/awesomeblossomart3_page_mob.jpg)
+![Screenshot 7](./screenshots/awesomeblossomart3_page_mob.png)
 
-![Screenshot 8](./screenshots/awesomeblossomart4_page_mob.jpg)
+![Screenshot 8](./screenshots/awesomeblossomart4_page_mob.png)
 
-![Screenshot 9](./screenshots/awesomeblossomart5_page_mob.jpg)
+![Screenshot 9](./screenshots/awesomeblossomart5_page_mob.png)
 
-![Screenshot 10](./screenshots/awesomeblossomart6_page_mob.jpg)
+![Screenshot 10](./screenshots/awesomeblossomart6_page_mob.png)
