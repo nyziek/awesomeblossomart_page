@@ -19,6 +19,7 @@ Technologies used:
 
 Next steps in project's development:
 
+* adding contact form validation and functionality
 * adding subpage with gallery with 3 sections (children, adults, bellies, trainings)
 * adding subpages with offer descriptions
 * modifying event app ("Szkolenia" tab - separate project)
