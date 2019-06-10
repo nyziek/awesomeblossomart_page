@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 #about .aboutInfo .aboutInfoTitleHolder {
@@ -38,8 +38,23 @@
 
 #about .aboutInfo .aboutInfoText {
     width: 100%;
-    line-height: 32px;
+    line-height: 24px;
     text-align: justify;
+    font-size: 18px;
+}
+
+#about .aboutInfo .aboutInfoText p {
+    margin-bottom: 10px;
+}
+
+#about .aboutInfo .aboutInfoText div {
+   text-align: center;
+}
+
+#about .aboutInfo .aboutInfoText .aboutInfoTextList {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: left;
 }
 
 #about .aboutImageHolder {
