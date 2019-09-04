@@ -1,8 +1,7 @@
 #offer {
-    height: 700px;
+    height: calc(100vh - 100px);
     background-image: url("../images/paintstrokes.jpg");
     background-size: cover;
-    background-attachment: fixed;
     color: $colorText2;
 }
 
@@ -14,7 +13,7 @@
 }
 
 #offer .offerList {
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
 }

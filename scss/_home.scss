@@ -1,9 +1,9 @@
 #home {
-    height: 800px;
+    height: calc(100vh - 100px);
 }
 
 #home .bgImageHolder {
-    height: 800px;
+    height: calc(100vh - 100px);
     width: 50%;
     background-image: url("../images/zebra.jpg");
     background-position: center;

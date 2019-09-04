@@ -1,0 +1,241 @@
+#gallery {
+    height: calc(100vh - 100px);
+    background: #333333;
+    background-size: cover;
+    color: $colorText2;
+}
+
+#gallery .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#gallery .galleriesSlideshow {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 3px solid $colorPrimary1;
+}
+
+.galleriesNav {
+    width: 80px;
+    color: $colorPrimary1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.galleriesNavLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.galleriesNavRight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.galleriesNavButton {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    font-size: 30px;
+    font-weight: bold;
+    background: rgba(#FFFFFF, 0.3);
+    cursor: pointer;
+    padding-bottom: 4px;
+    transition: background 0.3s ease-in-out;
+    color: $colorPrimary1;
+}
+
+.galleriesNavButton:hover {
+    background: rgba(#FFFFFF, 0.5);
+    transition: background 0.1s ease-in-out;
+}
+
+.galleriesSlides {
+    width: 100%;
+    list-style-type: none;
+}
+
+.galleriesSlide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.galleriesSlide1 {
+    background-image: url("../images/gallery/adult_gallery_cover.jpg");
+}
+
+.galleriesSlide2 {
+    background-image: url("../images/gallery/children_gallery_cover.jpg");
+}
+
+.galleriesSlide3 {
+    background-image: url("../images/gallery/trainings_gallery_cover.jpg");
+}
+
+.activeSlide {
+    display: flex;
+}
+
+.galleriesSlideLabel {
+    width: fit-content;
+    min-width: 300px;
+    background: rgba(#FFFFFF, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $colorText1;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.galleriesSlideLabel--top {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#gallery button {
+    font-family: 'Nunito', sans-serif;
+    width: 240px;
+    height: 50px;
+    margin: 10px 0 5px 0;
+    background: $colorSecondary2;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#gallery button:hover {
+    background: $colorPrimary1;
+    color: $colorText1;
+}
+
+#gallery button:focus {
+    outline: none;
+}
+
+//
+//@media (max-width: 1050px) {
+//
+//    #gallery {
+//        height: auto;
+//    }
+//
+//    #gallery .container {
+//        height: 100%;
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//    }
+//
+//    #gallery .galleriesList {
+//        height: 95%;
+//        flex-wrap: wrap;
+//        justify-content: center;
+//        margin: 15px 0;
+//    }
+//
+//    #gallery .galleriesList .offerItem {
+//        height: 32%;
+//        width: 99%;
+//        flex-direction: row;
+//        margin: 10px 0;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfo {
+//        height: 95%;
+//        width: 50%;
+//        justify-content: center;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoTitleHolder {
+//        padding-top: 10px;
+//        height: 40%;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoText {
+//        padding-top: 10px;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoMore {
+//        height: 95%;
+//        width: 50%;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoMore .offerInfoImgHolder {
+//        margin-top: 0;
+//        align-items: center;
+//        height: 90%;
+//    }
+//}
+//
+//@media (max-width: 750px) {
+//
+//    #gallery .galleriesList .offerItem .offerInfoTitle {
+//        font-size: 30px;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoText {
+//        font-size: 16px;
+//    }
+//
+//    #gallery .galleriesList button {
+//        width: 160px;
+//        height: 60px;
+//    }
+//}
+//
+//@media (max-width: 600px) {
+//
+//    #gallery .galleriesList .offerItem {
+//        flex-direction: column;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfo {
+//        width: 100%;
+//        height: auto;
+//        justify-content: center;
+//        margin-bottom: 15px;
+//    }
+//
+//    #gallery .galleriesList .offerItem .decor {
+//        margin-bottom: 15px;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoText {
+//        padding-top: 0;
+//        text-align: center;
+//    }
+//
+//    #gallery .galleriesList .offerItem .offerInfoMore {
+//        width: 100%;
+//        height: auto;
+//    }
+//}
