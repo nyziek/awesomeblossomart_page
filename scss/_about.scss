@@ -1,6 +1,6 @@
 #about {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     background: $colorPrimary1;
 }
 
@@ -58,8 +58,8 @@
 }
 
 #about .aboutImageHolder {
-    height: 100%;
-    width: 50%;
+    height: 90%;
+    width: 45%;
     background-image: url("../images/monika.jpg");
     background-position: center;
     background-size: cover;

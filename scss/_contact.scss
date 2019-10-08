@@ -1,5 +1,5 @@
 #contact {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     color: $colorLight1;
 }
 
@@ -57,6 +57,7 @@
     background: $bgColor;
     border: 0;
     border-bottom: 1px solid $colorLight1;
+    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     text-align: center;
     color: $colorLight2;
@@ -68,14 +69,22 @@
     text-align: center;
 }
 
-#contact .contactInfo .contactForm input:focus {
+#contact .contactInfo .contactForm input:focus,
+#contact .contactInfo .contactForm textarea:focus {
     outline: $colorLight1;
-    background: $colorLight2;
 }
 
-#contact .contactInfo .contactForm input#message {
+#contact .contactInfo .contactForm textarea#message {
+    width: 90%;
     height: 200px;
+    background: $bgColor;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: $colorLight2;
     border: 1px solid $colorLight1;
+    padding: 5px 10px;
+    resize: none;
+    text-align: center;
 }
 
 #contact button {

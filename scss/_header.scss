@@ -1,6 +1,6 @@
 #header {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background: $bgColor;
     border-bottom: 1px solid #C8C8C9;
     position: fixed;
@@ -25,7 +25,6 @@
 }
 
 #header .logo a {
-    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -33,12 +32,14 @@
 
 #header .logo img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 80%;
 }
 
 #header .menuContainer {
     width: 60%;
-    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #header .menu {
@@ -70,10 +71,9 @@
 
 #header .hamburgerMenuIcon {
     display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
     cursor: pointer;
+    margin-right: 5%;
+    margin-top: -15px;
 }
 
 #header .bar1, #header .bar2, #header .bar3 {
@@ -115,7 +115,7 @@
 
     #header .menu {
         height: auto;
-        margin-top: 100px;
+        margin-top: 70px;
         visibility: hidden;
         flex-direction: column;
         align-items: flex-end;

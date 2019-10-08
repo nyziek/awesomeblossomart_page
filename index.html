@@ -7,6 +7,8 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700|Quicksand&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 </head>
 <body>
 
@@ -31,21 +33,51 @@
 
                 <ul class="menu">
                     <li class="menuItem menuItem1">
-                        <a href="#">Home</a></li>
+                        <a
+                            href="#"
+                            onclick="closeAllOfferDetails()"
+                        >
+                            Home
+                        </a>
+                    </li>
                     <li class="menuItem menuItem2">
-                        <a href="#aboutAnchor">O mnie</a>
+                        <a
+                            href="#aboutAnchor"
+                            onclick="closeAllOfferDetails()"
+                        >
+                            O mnie
+                        </a>
                     </li>
                     <li class="menuItem menuItem3">
-                        <a href="#offerAnchor">Oferta</a>
+                        <a
+                            href="#offerAnchor"
+                        >
+                            Oferta
+                        </a>
                     </li>
                     <li class="menuItem menuItem4">
-                        <a href="build">Szkolenia</a>
+                        <a
+                            href="https://monikanyznyk.wixsite.com/awesomeblossomart/13-14-08-warsztaty-z-sally-ann-lync"
+                            onclick="closeAllOfferDetails()"
+                        >
+                            Szkolenia
+                        </a>
                     </li>
                     <li class="menuItem menuItem5">
-                        <a href="#galleryAnchor">Galeria</a>
+                        <a
+                            href="#galleryAnchor"
+                            onclick="closeAllOfferDetails()"
+                        >
+                            Galeria
+                        </a>
                     </li>
                     <li class="menuItem menuItem6">
-                        <a href="#contactAnchor">Kontakt</a>
+                        <a
+                            href="#contactAnchor"
+                            onclick="closeAllOfferDetails()"
+                        >
+                            Kontakt
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -60,7 +92,7 @@
             <div class="container">
                 <div class="homeInfo">
                     <p class="homeInfoText">
-                        Malowanie twarzy i ciała to pasja która pochłonęła mnie całkowicie. Cieszę się na każde spotkanie z drugą osobą - czy to roześmiane dziecko,  tancerka, małżeństwo idące na bal kostiumowy, czy dziewczyny organizujące panieńskie lub babyshower.
+                        Malowanie twarzy i ciała to pasja która pochłonęła mnie całkowicie. Cieszę się na każde spotkanie z drugą osobą - czy to roześmiane dziecko,  tancerka, małżeństwo idące na bal kostiumowy, czy dziewczyny organizujące panieński lub babyshower.
                     </p>
                 </div>
             </div>
@@ -132,14 +164,38 @@
                                 <img class="decor" src="images/decor.png">
                             </div>
                             <p class="offerInfoText">
-                                Urodziny, Imieniny, bale dziecięce, imprezy przedszkolne, plenerowe, występy taneczne.
+                                Urodziny, Imieniny, bale dziecięce, imprezy przedszkolne, plenerowe, występy taneczne
                             </p>
                         </div>
                         <div class="offerInfoMore">
                             <div class="offerInfoImgHolder">
                                 <img class="offerInfoImg" src="images/child.jpg">
                             </div>
-                            <button>DOWIEDZ SIĘ WIĘCEJ</button>
+                            <button
+                                onClick="openChildrenOfferDetails()"
+                            >
+                                DOWIEDZ SIĘ WIĘCEJ
+                            </button>
+                        </div>
+                        <div class="offerItemDetails offerItem1Details">
+                            <div class="offerItemDetailsText">
+                                <img src="./images/child_details.jpg"/>
+                                <div class="offerItemDetailsTextItem offerItemDetailsTextItem--main">
+                                    Urodziny, Imieniny, bale dziecięce, imprezy przedszkolne, plenerowe, występy taneczne:
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        face
+                                    </i>
+                                    130-150 zł / 1 h - malowanie dziecięcych buziek
+                                </div>
+                            </div>
+                            <button
+                                    class="offerItemDetailsCloseBtn"
+                                    onclick="closeChildrenOfferDetails()"
+                            >
+                                ZAMKNIJ
+                            </button>
                         </div>
                     </div>
 
@@ -152,14 +208,56 @@
                                 <img class="decor" src="images/decor.png">
                             </div>
                             <p class="offerInfoText">
-                                Wieczory panieńskie, babyshower, malowanie brzuszków ciażowych, imprezy firmowe, malowanie festiwalowe, klubowe, malowanie UV.
+                                Wieczory panieńskie, babyshower, malowanie brzuszków ciążowych, imprezy firmowe, malowanie festiwalowe, klubowe, UV
                             </p>
                         </div>
                         <div class="offerInfoMore">
                             <div class="offerInfoImgHolder">
                                 <img class="offerInfoImg" src="images/adult.jpg">
                             </div>
-                            <button>DOWIEDZ SIĘ WIĘCEJ</button>
+                            <button
+                                onClick="openAdultsOfferDetails()"
+                            >
+                                DOWIEDZ SIĘ WIĘCEJ
+                            </button>
+                        </div>
+                        <div class="offerItemDetails offerItem2Details">
+                            <div class="offerItemDetailsText">
+                                <img src="./images/adult_details.jpg"/>
+                                <div class="offerItemDetailsTextItem offerItemDetailsTextItem--main">
+                                    Panieńskie, babyshower,  malowanie brzuszków ciażowych, wyjście firmowe, malowanie festiwalowe, klubowe, UV:
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        wc
+                                    </i>
+                                    150 zł / 1 h - malowanie dorosłych na festiwalach, przyjęciach, imprezach firmowych itp.
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        person
+                                    </i>
+                                    100 -150 zł / 1 osoba / 1h  - makijaż całej twarzy i szyi lub dekoltu na specjalną okazję
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        child_friendly
+                                    </i>
+                                    300 zł / 2 h - babyshower, panieński
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        pregnant_woman
+                                    </i>
+                                    140 zł - 200 zł - artystyczne malowanie brzuszka ciążowego
+                                </div>
+                            </div>
+                            <button
+                                    class="offerItemDetailsCloseBtn"
+                                    onclick="closeAdultsOfferDetails()"
+                            >
+                                ZAMKNIJ
+                            </button>
                         </div>
                     </div>
 
@@ -172,14 +270,44 @@
                                 <img class="decor" src="images/decor.png">
                             </div>
                             <p class="offerInfoText">
-                                Indywidualnie dobrane do potrzeb szkolenia face painting od poziomu podstawowego, do zaawansowanego.
+                                Indywidualnie dobrane do potrzeb szkolenia face painting od poziomu podstawowego, do zaawansowanego
                             </p>
                         </div>
                         <div class="offerInfoMore">
                             <div class="offerInfoImgHolder">
                                 <img class="offerInfoImg" src="images/training.jpg">
                             </div>
-                            <button>DOWIEDZ SIĘ WIĘCEJ</button>
+                            <button
+                                    onClick="openTrainingsOfferDetails()"
+                            >
+                                DOWIEDZ SIĘ WIĘCEJ
+                            </button>
+                        </div>
+                        <div class="offerItemDetails offerItem3Details">
+                            <div class="offerItemDetailsText offerItemDetailsText--main">
+                                <img src="./images/training_details.jpg"/>
+                                <div class="offerItemDetailsTextItem offerItemDetailsTextItem--main">
+                                    Indywidualnie dobrane do potrzeb szkolenia facepainting od poziomu podstawowego do zaawansowanego:
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        person
+                                    </i>
+                                    600 zł / 1 osoba / 7h - indywidualnie
+                                </div>
+                                <div class="offerItemDetailsTextItem">
+                                    <i class="material-icons">
+                                        people_alt
+                                    </i>
+                                    450 zł / 1 osoba / 7h - grupowe (do 10 osób)
+                                </div>
+                            </div>
+                            <button
+                                    class="offerItemDetailsCloseBtn"
+                                    onclick="closeTrainingsOfferDetails()"
+                            >
+                                ZAMKNIJ
+                            </button>
                         </div>
                     </div>
 
@@ -198,7 +326,20 @@
                         </div>
                     </div>
                     <ul class="galleriesSlides">
-                        <li class="galleriesSlide galleriesSlide1 activeSlide">
+                        <li class="galleriesSlide galleriesSlide4 activeSlide">
+                            <div class="galleriesSlideLabel galleriesSlideLabel--top">
+                                GALERIA
+                            </div>
+                            <div class="galleriesSlideLabel">
+                                OSIĄGNIĘCIA
+                                <a href="./achievements.html" >
+                                    <button>
+                                        ZOBACZ
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="galleriesSlide galleriesSlide1">
                             <div class="galleriesSlideLabel galleriesSlideLabel--top">
                                 GALERIA
                             </div>
@@ -257,24 +398,29 @@
                         NAPISZ DO MNIE
                     </h2>
                     <img class="decor" src="images/decor.png">
-                    <form class="contactForm">
+                    <form class="contactForm" action="https://mailthis.to/awesomeblossomart"
+                          method="POST">
                         <div class="inputHolder">
-                            <input id="name" title="name" placeholder="Podaj swoje imię">
+                            <input id="name" name="name" title="name" placeholder="Podaj swoje imię">
                             <label for="name">Imię</label>
                         </div>
                         <div class="inputHolder">
-                            <input id="surname" title="surname" placeholder="Podaj swoje nazwisko">
+                            <input id="surname" name="surname" title="surname" placeholder="Podaj swoje nazwisko">
                             <label for="surname">Nazwisko</label>
                         </div>
                         <div class="inputHolder">
-                            <input id="email" title="email" placeholder="Podaj swój adres e-mail">
+                            <input id="email" name="_replyto" title="email" placeholder="Podaj swój adres e-mail">
                             <label for="email">E-mail</label>
                         </div>
                         <div class="inputHolder">
-                            <input id="message" title="message" placeholder="Wpisz treść wiadomości">
+                            <textarea id="message" name="message" title="message" placeholder="Wpisz treść wiadomości"></textarea>
                             <label for="message">Treść wiadomości</label>
                         </div>
-                        <button>WYŚLIJ</button>
+                        <input type="hidden" name="_subject" value="Wiadomość ze strony awesomeblossomart.com">
+                        <input type="hidden" name="_after" value="https://nyziek.pl/projects/awesomeblossomart/">
+                        <input type="hidden" name="_honeypot" value="">
+                        <input type="hidden" name="_confirmation" value="Wiadomość została wysłana!">
+                        <button type="submit" value="Send">WYŚLIJ</button>
                     </form>
                 </div>
             </div>

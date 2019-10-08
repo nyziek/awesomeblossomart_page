@@ -9,14 +9,15 @@ body {
 }
 
 .pageContent {
-    padding-top: 100px;
+    padding-top: 70px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 :target {
     display: block;
     position: relative;
-    top: -100px;
+    top: -70px;
     visibility: hidden;
 }
 
@@ -33,4 +34,46 @@ a {
 .decor {
     width: 50%;
     margin: 5px 0 30px 0;
+}
+
+.material-icons {
+    font-size: 34px !important;
+    margin-right: 10px;
+    color: $colorPrimary2;
+}
+
+// Scroll Bar
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+body::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+body::-webkit-scrollbar-thumb {
+    background: $colorSecondary1;
+    border: 0 none $bgColorAlt;
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: $colorPrimary2;
+}
+body::-webkit-scrollbar-thumb:active {
+    background: $colorPrimary2;
+}
+body::-webkit-scrollbar-track {
+    background: $bgColor;
+    border: 0 none $bgColorAlt;
+    border-radius: 22px;
+}
+body::-webkit-scrollbar-track:hover {
+    background: $bgColor;
+}
+body::-webkit-scrollbar-track:active {
+    background: $bgColor;
+}
+body::-webkit-scrollbar-corner {
+    background: transparent;
 }

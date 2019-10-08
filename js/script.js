@@ -4,18 +4,51 @@
 
 const hamburgerMenuIcon = document.querySelector(".hamburgerMenuIcon");
 const menu = document.querySelector(".menu");
+const childrenOfferDetails = document.querySelector(".offerItem1Details");
+const adultsOfferDetails = document.querySelector(".offerItem2Details");
+const trainingsOfferDetails = document.querySelector(".offerItem3Details");
 
 //Methods
 
-function hamburgerMenuClickHandle() {
+hamburgerMenuClickHandle = () => {
     hamburgerMenuIcon.classList.toggle("change");
     menu.classList.toggle("visible");
-}
+};
 
-function menuHide() {
+menuHide = () => {
     menu.classList.toggle("visible");
     hamburgerMenuIcon.classList.toggle("change");
-}
+};
+
+openChildrenOfferDetails = () => {
+    childrenOfferDetails.classList.add('offerItemDetails--active')
+};
+
+closeChildrenOfferDetails = () => {
+    childrenOfferDetails.classList.remove('offerItemDetails--active')
+};
+
+openAdultsOfferDetails = () => {
+    adultsOfferDetails.classList.add('offerItemDetails--active')
+};
+
+closeAdultsOfferDetails = () => {
+    adultsOfferDetails.classList.remove('offerItemDetails--active')
+};
+
+openTrainingsOfferDetails = () => {
+    trainingsOfferDetails.classList.add('offerItemDetails--active')
+};
+
+closeTrainingsOfferDetails = () => {
+    trainingsOfferDetails.classList.remove('offerItemDetails--active')
+};
+
+closeAllOfferDetails = () => {
+    closeChildrenOfferDetails();
+    closeAdultsOfferDetails();
+    closeTrainingsOfferDetails();
+};
 
 //Logic
 

@@ -1,5 +1,5 @@
 #offer {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     background-image: url("../images/paintstrokes.jpg");
     background-size: cover;
     color: $colorText2;
@@ -19,6 +19,7 @@
 }
 
 #offer .offerList .offerItem {
+    position: relative;
     height: 100%;
     width: 31%;
     background: rgba($colorLight2, 0.9);
@@ -27,6 +28,63 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+#offer .offerList .offerItem .offerItemDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: $bgColor;
+    border: 3px solid $colorSecondary1;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    color: $bgColorAlt;
+    transition: 0.5s ease-out all;
+}
+
+#offer .offerList .offerItem .offerItemDetails--active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease-in all;
+}
+
+#offer .offerList .offerItemDetails img {
+    max-height: 200px;
+    max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#offer .offerList .offerItemDetails .offerItemDetailsCloseBtn {
+    margin: 15px 0 30px;
+    cursor: pointer;
+}
+
+#offer .offerList .offerItemDetails .offerItemDetailsText {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#offer .offerList .offerItemDetails .offerItemDetailsTextItem {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed $colorPrimary2;
+    padding: 5px 0;
+    text-align: left;
+}
+
+#offer .offerList .offerItemDetails .offerItemDetailsTextItem--main {
+    align-items: flex-start;
+    min-height: 90px;
+    padding-bottom: 8px;
 }
 
 #offer .offerList .offerItem .offerInfo {
@@ -122,6 +180,7 @@
 
     #offer .offerList .offerItem {
         height: 32%;
+        //min-height: 375px;
         width: 99%;
         flex-direction: row;
         margin: 10px 0;
@@ -152,21 +211,42 @@
         align-items: center;
         height: 90%;
     }
+
+    #offer .offerList .offerItemDetails .offerItemDetailsTextItem--main {
+        min-height: 45px;
+    }
+
+    #offer .offerList .offerItemDetails img {
+        display: none;
+    }
 }
 
 @media (max-width: 750px) {
+
+    #offer .offerList .offerItem {
+        min-height: 375px;
+    }
 
     #offer .offerList .offerItem .offerInfoTitle {
         font-size: 30px;
     }
 
     #offer .offerList .offerItem .offerInfoText {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #offer .offerList button {
+        margin-top: 30px;
         width: 160px;
         height: 60px;
+    }
+
+    #offer .offerList .offerItemDetails .offerItemDetailsTextItem--main {
+        min-height: 45px;
+    }
+
+    #offer .offerList .offerItemDetails img {
+        display: none;
     }
 }
 
@@ -195,5 +275,13 @@
     #offer .offerList .offerItem .offerInfoMore {
         width: 100%;
         height: auto;
+    }
+
+    #offer .offerList .offerItemDetails img {
+        display: none;
+    }
+
+    #offer .offerList .offerItemDetails .offerItemDetailsCloseBtn {
+        margin-bottom: 18px;
     }
 }
