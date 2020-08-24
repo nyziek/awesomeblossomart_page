@@ -2,69 +2,78 @@
     width: 100%;
     height: calc(100vh - 70px);
     background: $colorPrimary1;
-}
 
-#about .container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 10px;
-}
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+    }
 
-#about .aboutInfo {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-}
+    .aboutInfo {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
 
-#about .aboutInfo .aboutInfoTitleHolder {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+        .aboutInfoTitleHolder {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-#about .aboutInfo .aboutInfoTitle {
-    font-size: 40px;
-    font-weight: lighter;
-    text-align: center;
-}
+        .aboutInfoTitle {
+            font-size: 40px;
+            font-weight: lighter;
+            text-align: center;
+        }
 
-#about .aboutInfo .aboutInfoText {
-    width: 100%;
-    line-height: 24px;
-    text-align: justify;
-    font-size: 18px;
-}
+        .aboutInfoText {
+            width: 100%;
+            line-height: 24px;
+            text-align: justify;
+            font-size: 18px;
 
-#about .aboutInfo .aboutInfoText p {
-    margin-bottom: 10px;
-}
+            p {
+                margin-bottom: 10px;
+            }
 
-#about .aboutInfo .aboutInfoText div {
-   text-align: center;
-}
+            p.highlightedText {
+                color: $colorPrimary2;
+            }
 
-#about .aboutInfo .aboutInfoText .aboutInfoTextList {
-    display: inline-block;
-    margin-left: 20px;
-    text-align: left;
-}
+            div {
+                text-align: center;
+            }
 
-#about .aboutImageHolder {
-    height: 90%;
-    width: 45%;
-    background-image: url("../images/monika.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 20px 20px $colorPrimary1 inset;
+            .aboutInfoTextList {
+                display: inline-block;
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            .certifiedLogo {
+                width: auto;
+                height: 150px;
+            }
+        }
+    }
+
+    .aboutImageHolder {
+        height: 90%;
+        width: 45%;
+        background-image: url("../images/monika.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 20px 20px $colorPrimary1 inset;
+    }
 }
 
 @media (max-width: 1040px) {

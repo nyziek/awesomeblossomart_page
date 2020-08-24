@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const notifier = require('node-notifier');
 const c = require('ansi-colors');
 
-function errorMessage(err) {
+const errorMessage = err => {
 
     console.log(c.red(err.messageFormatted));
 
@@ -16,22 +16,22 @@ function errorMessage(err) {
     });
 }
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+// gulp.task('browser-sync', () => {
+//     browserSync.init({
+//         server: {
+//             baseDir: "./"
+//         }
+//     });
+// });
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
     return gulp.src('./scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: "compressed" //compact, compressed, expanded
         }).on('error', errorMessage))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
         .pipe(sourcemaps.write("."))
@@ -39,12 +39,20 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function () {
-    gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
-});
+// gulp.task('watch', () => {
+//     gulp.watch('./scss/**/*.scss', gulp.series('sass');
+//     gulp.watch("*.html").on('change', browserSync.reload);
+// });
 
-gulp.task("default", function() {
-   console.log("<><><><><><<><><><>");
-   gulp.start(["sass", "watch", "browser-sync"]);
-});
+gulp.task('serve', gulp.series('sass', function() {
+
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch('./scss/**/*.scss', gulp.series('sass'));
+    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("*.js").on('change', browserSync.reload);
+}));
+
+gulp.task('default', gulp.series('serve'));
