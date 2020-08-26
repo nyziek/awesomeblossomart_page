@@ -1,6 +1,9 @@
+@import "./variables";
+
 #contact {
     height: calc(100vh - 120px);
     color: $colorLight1;
+    padding-top: 30px;
 }
 
 #contact .container {
@@ -17,6 +20,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0 0 20px 20px $bgColor inset;
 }
 
 #contact .contactInfo {
@@ -92,18 +96,17 @@
     width: 160px;
     height: 50px;
     margin: 20px 0 10px 0;
-    background: $colorPrimary1;
+    background: $colorPrimary2;
     font-size: 20px;
     border: 0;
     border-radius: 5px;
-    color: $colorText1;
+    color: $bgColorAlt;
     cursor: pointer;
 }
 
 #contact button:hover,
 #contact button:focus {
-    background: $colorPrimary2;
-    color: $colorText2;
+    background: $colorPrimary1;
 }
 
 @media (max-width: 835px) {

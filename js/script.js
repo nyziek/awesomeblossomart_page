@@ -1,3 +1,9 @@
+//LAYOUT
+
+if(window.devicePixelRatio > 1.1 ) {
+    document.getElementById('body').classList.add("zoom1x");
+}
+
 //MENU
 
 //Variables

@@ -1,3 +1,5 @@
+@import "./variables";
+
 #footer {
     height: 50px;
     width: 100%;
@@ -42,4 +44,5 @@
 #footer .copyright {
     text-align: right;
     font-size: 14px;
+    color: $bgColor;
 }

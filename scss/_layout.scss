@@ -1,3 +1,10 @@
+@import "./variables";
+
+.zoom1x{
+    zoom: 95%; /* all browsers */
+    -moz-transform: scale(0.95);  /* Firefox */
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background: $bgColor;
@@ -10,7 +17,7 @@ body {
 
 .pageContent {
     padding-top: 70px;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -29,6 +36,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .decor {
@@ -55,7 +63,7 @@ body::-webkit-scrollbar-button {
 body::-webkit-scrollbar-thumb {
     background: $colorSecondary1;
     border: 0 none $bgColorAlt;
-    border-radius: 50px;
+    //border-radius: 50px;
 }
 body::-webkit-scrollbar-thumb:hover {
     background: $colorPrimary2;

@@ -1,18 +1,17 @@
+@import "./variables";
+
 #about {
     width: 100%;
-    height: calc(100vh - 70px);
-    background: $colorPrimary1;
+    padding-top: 30px;
+    padding-bottom: 40px;
 
     .container {
-        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 10px;
     }
 
     .aboutInfo {
-        height: 100%;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -39,6 +38,7 @@
             line-height: 24px;
             text-align: justify;
             font-size: 18px;
+            color: $colorLight1;
 
             p {
                 margin-bottom: 10px;
@@ -59,32 +59,31 @@
             }
 
             .certifiedLogo {
+                margin-top: 10px;
                 width: auto;
-                height: 150px;
+                height: 120px;
             }
         }
     }
 
     .aboutImageHolder {
-        height: 90%;
-        width: 45%;
-        background-image: url("../images/monika.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 0 20px 20px $colorPrimary1 inset;
+        width: 50%;
+        box-shadow: 0 0 20px 20px $bgColor inset;
+        position: relative;
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
     }
 }
 
 @media (max-width: 1040px) {
 
-    #about {
-        height: auto;
-        background: $colorPrimary1;
-    }
-
     #about .container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -100,17 +99,11 @@
     }
 
     #about .aboutImageHolder {
-        height: 400px;
-        width: 100%;
-        background-position: center;
+        display: none;
     }
 }
 
 @media (max-width: 450px) {
-
-    #about .aboutImageHolder {
-        height: 300px;
-    }
 
     #about .aboutInfo .aboutInfoText {
         text-align: center;

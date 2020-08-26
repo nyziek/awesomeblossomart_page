@@ -1,169 +1,104 @@
+@import "./variables";
+
 #gallery {
-    height: calc(100vh - 70px);
     min-height: 500px;
-    background: $bgColorLighter;
     background-size: cover;
     color: $colorText2;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 #gallery .container {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#gallery .galleriesSlideshow {
-    height: 85%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    border: 3px solid $colorPrimary1;
-}
-
-#gallery .galleriesSlideshow:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    border: 3px solid $colorPrimary2;
-    background: transparent;
-}
-
-.galleriesNav {
-    width: 80px;
-    color: $colorPrimary1;
-    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
 }
 
-.galleriesNavLeft {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.galleriesNavRight {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.galleriesNavButton {
-    width: 50px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25%;
-    font-size: 30px;
-    font-weight: bold;
-    background: rgba($bgColorAlt, 0.5);
-    cursor: pointer;
-    padding-bottom: 4px;
-    transition: background 0.3s ease-in-out;
-    color: $colorPrimary2;
-}
-
-.galleriesNavButton:hover {
-    background: rgba($bgColorAlt, 0.7);
-    transition: background 0.1s ease-in-out;
-}
-
-.galleriesSlides {
-    width: 100%;
-    list-style-type: none;
-}
-
-.galleriesSlide {
-    width: 100%;
+.wrapper {
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    display: none;
-}
-
-.galleriesSlide1 {
-    background-image: url("../images/gallery/adult_gallery_cover.jpg");
-}
-
-.galleriesSlide2 {
-    background-image: url("../images/gallery/children_gallery_cover.jpg");
-}
-
-.galleriesSlide3 {
-    background-image: url("../images/gallery/trainings_gallery_cover.jpg");
-}
-
-.galleriesSlide4 {
-    background-image: url("../images/gallery/achievements_gallery_cover.jpg");
-}
-
-.activeSlide {
-    display: flex;
-}
-
-.galleriesSlideLabel {
-    width: fit-content;
-    min-width: 300px;
-    background: rgba($bgColorAlt, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $colorText1;
+    width: 100%;
+    padding: 10px;
     text-align: center;
-    font-size: 35px;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 15px;
-    cursor: default;
-    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.galleriesSlideLabel--top {
-    background: rgba($colorPrimary2, 0.9);
-    font-size: 40px;
-    font-weight: 700;
+.polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.4rem 2rem rgba(0,0,0,0.5);
 }
 
-#gallery button {
-    font-family: 'Nunito', sans-serif;
-    width: 240px;
-    height: 50px;
-    margin: 10px 0 5px 0;
-    background: $colorSecondary2;
-    font-size: 20px;
-    border: 0;
-    border-radius: 5px;
-    color: $bgColorAlt;
+.polaroid > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.caption {
+    font-size: 30px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.caption span {
+    color: $colorPrimary2
+}
+
+.item {
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    filter: grayscale(40%);
+}
+
+.item:nth-of-type(4n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+3) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+    transition: all 0.35s;
+}
+
+.item:nth-of-type(4n+4) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+    transition: all 0.35s;
+}
+
+.item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;
     cursor: pointer;
-}
-
-#gallery button:hover {
-    background: $colorPrimary1;
     color: $colorText1;
 }
 
-#gallery button:focus {
-    outline: none;
-}
+@media (max-width: 920px), (max-height: 860px) {
 
+    #gallery {
+        height: auto;
+    }
 
-@media (max-width: 555px) {
+    .wrapper {
+        margin-bottom: 30px;
+    }
 
-    .galleriesSlideLabel {
-        font-size: 25px;
+    .item {
+        margin-top: 1rem;
+        width: 600px;
+        filter: none;
+    }
+
+    .caption {
+        font-size: 26px;
     }
 }
