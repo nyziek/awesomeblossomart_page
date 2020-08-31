@@ -4,7 +4,7 @@ const gallery = document.querySelector(".galleria");
 
 //METHODS
 
-for(let i=1; i<=20; i++) {
+for(let i=1; i<=53; i++) {
 
     const newImg = document.createElement('img');
 
